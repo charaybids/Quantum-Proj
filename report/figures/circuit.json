@@ -1,0 +1,13 @@
+{
+  "n_qubits": 8,
+  "n_rz_linear": 8,
+  "n_rzz_quadratic": 28,
+  "depth": 16,
+  "gate_counts": {
+    "rzz": 28,
+    "u": 8,
+    "rz": 8,
+    "rx": 8
+  },
+  "n_parameters": 2
+}

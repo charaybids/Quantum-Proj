@@ -1,0 +1,60 @@
+{
+  "performance": {
+    "QAOA Quantum": {
+      "ann_return": 0.09787181012167578,
+      "ann_vol": 0.11262160825724754,
+      "sharpe": 0.6914464402231132,
+      "max_dd": -0.20514058092876475,
+      "calmar": 0.47709629015656274
+    },
+    "Classical ML": {
+      "ann_return": 0.08542313514278121,
+      "ann_vol": 0.14157795574587093,
+      "sharpe": 0.4620997301318165,
+      "max_dd": -0.17651221389732052,
+      "calmar": 0.48395027888819625
+    },
+    "Static 60/40": {
+      "ann_return": 0.08736005980602202,
+      "ann_vol": 0.12934372253476484,
+      "sharpe": 0.5207833707423803,
+      "max_dd": -0.26211954625813216,
+      "calmar": 0.33328327113763156
+    },
+    "Equal Weight": {
+      "ann_return": 0.07865781608309219,
+      "ann_vol": 0.11483325542516958,
+      "sharpe": 0.5108086143331207,
+      "max_dd": -0.20259016642605998,
+      "calmar": 0.3882607802279495
+    }
+  },
+  "quantum_diagnostics": {
+    "n_qubits": 8,
+    "circuit_depth": 4,
+    "qaoa_reps": 1,
+    "cobyla_maxiter": 80,
+    "shots": 1024,
+    "risk_aversion": 1.0,
+    "n_rebalances": 28,
+    "match_rate": 1.0,
+    "mean_optimality_gap": 0.0,
+    "total_qaoa_seconds": 219.60846760001732
+  },
+  "ml_diagnostics": {
+    "model": "RandomForestRegressor(n=200, depth=4)",
+    "features": [
+      "r_lag1",
+      "r_lag2",
+      "r_lag3",
+      "mom_3",
+      "mom_6",
+      "mom_12",
+      "vol_6"
+    ],
+    "prediction_rmse": 0.05108700071955339,
+    "directional_accuracy": 0.5535714285714286,
+    "n_predictions": 224
+  },
+  "n_oos_months": 82
+}

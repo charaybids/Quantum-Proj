@@ -1,0 +1,15 @@
+# Quantum vs Classical Portfolio Optimisation - dependencies
+# Tested in the conda env "qml-classiq" (Python 3.11).
+#
+#   conda activate qml-classiq
+#   pip install -r requirements.txt
+
+qiskit==2.4.1
+qiskit-optimization==0.7.0
+qiskit-algorithms==0.4.0
+yfinance==1.4.1
+scikit-learn==1.8.0
+pandas==2.3.3
+numpy==2.4.4
+matplotlib==3.10.9
+scipy==1.17.1
